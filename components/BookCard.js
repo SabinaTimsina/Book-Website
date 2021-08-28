@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-grid-carousel";
-import book_image from "../public/1.png";
+import Image from "next/Image";
 
 const slideData = [
   {
@@ -122,36 +122,36 @@ const slideData = [
   {
     id: 30,
     image: "https://picsum.photos/800/600?random=1",
-  }
-]
+  },
+];
 
 const BookCard = () => {
   return (
     <div className="CaroslBook">
       <h1>Bestselling Books</h1>
-      <hr/>
+      <hr />
       <Carousel cols={5} rows={2} gap={10} loop>
         {slideData.map((slide) => (
           <Carousel.Item key={slide.id}>
-            <div class="card card-flip h-100">
-              <img src={slide.image} class="card-img-top" alt="..." />
-              <div class="card-front text-white bg-light ">
-                <div class="card-body">
-                  <h3 class="card-title">Front</h3>
-                  <p class="card-text">
+            <div className="card card-flip h-100">
+              <Image src={slide.image} className="card-img-top" alt="..." />
+              <div className="card-front text-white bg-light ">
+                <div className="card-body">
+                  <h3 className="card-title">Front</h3>
+                  <p className="card-text">
                     With supporting text below as a natural lead-in to
                     additional content.
                   </p>
                 </div>
               </div>
-              <div class="card-back bg-white">
-                <div class="card-body">
-                  <h3 class="card-title">Back</h3>
-                  <p class="card-text">
+              <div className="card-back bg-white">
+                <div className="card-body">
+                  <h3 className="card-title">Back</h3>
+                  <p className="card-text">
                     Suprise this one has more more more more content on the
                     back!
                   </p>
-                  <a href="#" class="btn btn-outline-secondary">
+                  <a href="#" className="btn btn-outline-secondary">
                     Action
                   </a>
                 </div>
