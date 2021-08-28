@@ -1,0 +1,9 @@
+@mixin actSearch {
+  border-color: $white !important;
+  background-color: $darkcyan !important;
+}
+
+@mixin flipBook($deg) {
+  transform: rotateY($deg);
+
+}

@@ -1,0 +1,62 @@
+nav {
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+  color: $white;
+  margin: 0px auto 10px !important;
+
+  & a {
+    margin-left: 12px;
+  }
+
+  & .logo {
+    margin-right: auto;
+  }
+  & div div ul li a {
+    color: $white !important;
+    &:hover
+    {
+        background-color: $darkcyan;
+    }
+    &:active
+    {
+        background-color: $darkcyan;
+    }
+  }
+}
+.navbar-brand {
+  font-size: 2.75rem !important;
+  color: $white !important;
+}
+.btn-outline-success {
+  color: $darkcyan;
+  border-color: $white;
+}
+
+.btn-outline-primary {
+  color: $darkcyan !important;
+  border-color: $white !important;
+
+  &:hover {
+      @include actSearch;
+      
+  }
+  &:active {
+    @include actSearch;
+  }
+}
+
+.form-control{
+    border-radius: 0px !important;
+}
+
+.btn{
+    border-radius: 0px !important;
+}
+
+//navbar background color
+.bg-light{
+    background-color: $mainclr;
+  }
