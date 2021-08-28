@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-grid-carousel";
-import Image from "next/Image";
+import Image from "next/image";
 
 const slideData = [
   {
