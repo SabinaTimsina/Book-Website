@@ -54,15 +54,15 @@ export const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <div class="d-flex">
+          <div className="d-flex">
             <input
               type="search"
-              class="form-control"
+              className="form-control"
               placeholder="Search"
               aria-label="Search"
               aria-describedby="search-addon"
             />
-            <button type="button" class="btn btn-outline-primary">
+            <button type="button" className="btn btn-outline-primary">
             <Image src="/search.svg" alt="site logo" width={25} height={25} />
             </button>
           </div>
